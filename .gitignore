@@ -1,0 +1,16 @@
+.env
+../.env
+__pycache__
+doc
+.chainlit
+.env*
+.idea/*
+**/*.pickle
+*.csv
+*.out
+*.mp3
+.pixi
+.pixi/*
+**/.chroma_data*
+*.db
+chroma/

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chroma-editor"
+version = "0.1.0"
+description = "Streamlit editor for a Chroma vector DB with pagination and semantic search."
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "streamlit",
+  "chromadb",
+]
+
+# ← gives users the shell command `chroma-editor`
+[project.scripts]
+chroma-editor = "chroma_editor.app:main"

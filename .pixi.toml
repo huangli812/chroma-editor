@@ -1,0 +1,17 @@
+[project]
+name = "chroma-editor-dev"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "win-64"]
+
+[dependencies]
+python = "3.11.*"
+streamlit = "*"
+chromadb = "*"
+build = "*"
+twine = "*"
+setuptools = "*"
+wheel = "*"
+
+[tasks]
+build = "python -m build"
+publish = "twine upload dist/*"
